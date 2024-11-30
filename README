@@ -31,4 +31,11 @@ basicAuth credentials are "admin:pass", it is recommended you change this in you
 
 step 5:- Navigate to the url http://localhost:8081 and enter username as admin and password as pass. You can see the mongo express dashboard.
 
+Step 6:- Create my-db database and users collection in mongo-express
 
+Step 7:- Start your nodejs application locally ..navigate to the app directory of the project and run below
+				npm install
+				node server.js
+
+Step 8:- Access your nodejs application UI from the browser.
+			  http://localhost:3000
