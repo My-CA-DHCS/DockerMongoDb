@@ -1,0 +1,9 @@
+User Profile Sample App- Developed with DOCKER  (Using MongoDB and MongoExpress)
+
+This App shows user profile app using
+
+1. index.html with js and css style
+2. nodejs backend with express module.
+3. mongodb for data storage.
+
+All components are docker -based.
