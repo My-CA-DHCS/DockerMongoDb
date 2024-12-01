@@ -15,10 +15,10 @@ Step 1: Create docker network
 docker network create mongo-network 
 
 Step 2: start mongodb (Refer to Environment Variables section of mongo db docker distribution of the link: https://hub.docker.com/_/mongo)
-docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo    
+docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=pass --name mongodb --net mongo-network mongo    
 
 Step 3: start mongo-express (Refer to Configuration section of mongo express docker distribution of the link: https://hub.docker.com/_/mongo-express)
-docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password --net mongo-network --name mongo-express -e ME_CONFIG_MONGODB_SERVER=mongodb mongo-express   
+docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=pass --net mongo-network --name mongo-express -e ME_CONFIG_MONGODB_SERVER=mongodb mongo-express   
 
 Note:- both the mongodb and mongo-express are running in the network named 'mongo-network' above.
 
@@ -28,7 +28,7 @@ Step 4:- Now check the logs of the mongo-express as 'docker logs f96e37' and you
 Mongo Express server listening at http://0.0.0.0:8081
 Server is open to allow connections from anyone (0.0.0.0)
 basicAuth credentials are "admin:pass", it is recommended you change this in your config.js!
-
+	
 step 5:- Navigate to the url http://localhost:8081 and enter username as admin and password as pass. You can see the mongo express dashboard.
 
 Step 6:- Create my-db database and users collection in mongo-express
