@@ -41,6 +41,7 @@ Step 8:- Access your nodejs application UI from the browser.
 			  http://localhost:3000
 
 With Docker Compose
+-------------------
 
 To start the application
 Step 1: start mongodb and mongo-express
@@ -60,3 +61,8 @@ node server.js
 Step 5: access the nodejs application from browser
 
 http://localhost:3000
+
+
+To build a docker image from the application
+---------------------------------------------
+docker build -t my-app:1.0 .    
