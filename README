@@ -39,3 +39,24 @@ Step 7:- Start your nodejs application locally ..navigate to the app directory o
 
 Step 8:- Access your nodejs application UI from the browser.
 			  http://localhost:3000
+
+With Docker Compose
+
+To start the application
+Step 1: start mongodb and mongo-express
+
+docker-compose -f docker-compose.yaml up
+
+
+You can access the mongo-express under localhost:8080 from your browser
+Step 2: in mongo-express UI - create a new database "my-db"
+Step 3: in mongo-express UI - create a new collection "users" in the database "my-db"
+Step 4: start node server
+
+npm install
+node server.js
+
+
+Step 5: access the nodejs application from browser
+
+http://localhost:3000
